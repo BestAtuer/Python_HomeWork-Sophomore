@@ -1,11 +1,9 @@
 #Author: Atuer
 days_qzh= [0,31,59,90,120,151,181,212,243,273,304,334,365]
-# 判断今年是否为闰年
 def is_leap_year(y):
     if (y%4==0 and y%100) or y%400==0:
         return True
     return False
-#主程序
 y = int(input("请输入年份>>"))
 m = int(input("请输入月份>>"))
 s = '================[{:>10d}/{:<10d}]================\n  周日\t  周一\t  周二\t  周三\t  周四\t  周五\t  周六\n'.format(y,m)
