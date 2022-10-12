@@ -1,6 +1,6 @@
 days_qzh= 0,31,59,90,120,151,181,212,243,273,304,334,365
 def is_leap_year(y):
-    if (y%4==0 and y%100) or y%400==0:
+    if y%4==0 and y%100 or y%400==0:
         return True
     return False
 y = int(input("请输入年份>>"))
